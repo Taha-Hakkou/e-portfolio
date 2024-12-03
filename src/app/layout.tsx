@@ -5,7 +5,7 @@ import './globals.css'
 // const navine = Navine({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Your Portfolio',
+  title: 'Taha\'s Portfolio',
   description: 'A showcase of my projects and skills',
 }
 

@@ -13,7 +13,9 @@ export function Nav() {
           <div className="flex">
             <div className="flex-shrink-0 flex items-center">
               <Link href="/" className="text-2xl font-bold text-primary font-navine">
-                <span className="animate-glow">&lt;</span>YourName<span className="animate-glow">/&gt;</span>
+	        Taha&apos;s Portfolio
+      		<span className="inline-block w-2 h-5 ml-1 bg-primary"></span>
+                {/*<span className="animate-glow">&lt;</span>YourName<span className="animate-glow">/&gt;</span>*/}
               </Link>
             </div>
           </div>

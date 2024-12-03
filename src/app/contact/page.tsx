@@ -55,9 +55,9 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen bg-background matrix-bg flex flex-col">
       <Nav />
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 flex flex-col items-center">
+      <main className="py-16 px-6 lg:px-8 flex flex-col items-center"> {/*className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 flex flex-col items-center">*/}
         <h1 className="text-3xl font-bold mb-8 text-primary font-navine">
-          <span className="animate-glow">&lt;</span>Contact Me<span className="animate-glow">/&gt;</span>
+          <span className="animate-glow">&lt;</span>Get In Touch<span className="animate-glow">/&gt;</span>
         </h1>
         <form method="POST" className="w-full max-w-md space-y-4 cyberpunk-border p-6" onSubmit={handleSubmit} >
           <div>
