@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Github, Linkedin } from 'lucide-react';
 import { Badge } from "@/components/ui/badge";
 import { TypingAnimation } from '@/components/typing-animation';
+import { Timeline } from '@/components/timeline';
 
 export default function HomePage() {
   const skills = [
@@ -93,6 +94,15 @@ developAwesomeCode();
                 <div className="absolute -top-4 -left-4 w-16 h-16 bg-accent/20 rounded-full"></div>
               </div>
             </div>
+          </div>
+        </section>
+
+	<section className="py-16 px-4 sm:px-6 lg:px-8"> {/* bg-secondary/10">*/}
+          <div className="max-w-7xl mx-auto">
+            <h2 className="text-3xl font-bold mb-12 text-primary font-navine text-center">
+              <span className="animate-glow">&lt;</span>My Journey<span className="animate-glow">/&gt;</span>
+            </h2>
+            <Timeline />
           </div>
         </section>
 
