@@ -7,13 +7,38 @@ import { Github, Linkedin } from 'lucide-react';
 import { Badge } from "@/components/ui/badge";
 import { TypingAnimation } from '@/components/typing-animation';
 import { Timeline } from '@/components/timeline';
+import { SocialMediaCard } from '@/components/social-media-card';
 
 export default function HomePage() {
   const skills = [
     "JavaScript", "TypeScript", "React", "Next.js", "Node.js", "Express",
     "Python", "Django", "SQL", "MongoDB", "Docker", "AWS",
     "Cybersecurity", "Ethical Hacking", "Network Security", "Cryptography"
-  ]
+  ];
+
+  const socialMedia = [
+    {
+      name: "LinkedIn",
+      url: "https://www.linkedin.com/in/yourusername",
+      qrCode: "/linkedin-qr.png",
+      logo: "/linkedin-logo.png",
+      color: "text-blue-500"
+    },
+    {
+      name: "GitHub",
+      url: "https://github.com/yourusername",
+      qrCode: "/github-qr.png",
+      logo: "/github-logo.png",
+      color: "text-gray-800 dark:text-white"
+    },
+    {
+      name: "Twitter",
+      url: "https://twitter.com/yourusername",
+      qrCode: "/twitter-qr.png",
+      logo: "/twitter-logo.png",
+      color: "text-sky-500"
+    }
+  ];
 
   return (
     <div className="min-h-screen bg-background matrix-bg flex flex-col">
@@ -116,6 +141,20 @@ developAwesomeCode();
                 {skill}
               </Badge>
             ))}
+          </div>
+        </section>
+
+	{/* Social Media */}
+	<section className="py-16 px-4 sm:px-6 lg:px-8 bg-secondary/10">
+          <div className="max-w-7xl mx-auto">
+            <h2 className="text-3xl font-bold mb-12 text-primary font-navine text-center">
+              <span className="animate-glow">&lt;</span>Connect With Me<span className="animate-glow">/&gt;</span>
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-5xl mx-auto">
+              {socialMedia.map((platform, index) => (
+                <SocialMediaCard key={index} {...platform} />
+              ))}
+            </div>
           </div>
         </section>
       </main>
