@@ -3,7 +3,7 @@
 import { Nav } from '@/components/nav';
 import { Footer } from '@/components/footer';
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin } from 'lucide-react';
+import { /*Github, Linkedin,*/ FileDown/*, Twitter*/ } from 'lucide-react'
 import { Badge } from "@/components/ui/badge";
 import { TypingAnimation } from '@/components/typing-animation';
 import { Timeline } from '@/components/timeline';
@@ -77,8 +77,11 @@ export default function HomePage() {
                 <p className="text-xl text-muted-foreground mb-8 font-navine">
                   Passionate about creating secure and innovative web applications.
                 </p>
-                <div className="flex gap-4">
-                  <Button asChild className="cyberpunk-border">
+                <div className="flex flex-wrap gap-4">
+		  <Button asChild className="">
+                    <a href="/projects" className="relative z-10">Explore Projects</a>
+                  </Button>
+                  {/*<Button asChild className="cyberpunk-border">
                     <a href="/projects" className="relative z-10">Explore Projects</a>
                   </Button>
                   <Button variant="outline" className="cyberpunk-border">
@@ -88,6 +91,10 @@ export default function HomePage() {
                   <Button variant="outline" className="cyberpunk-border">
                     <Linkedin className="mr-2 h-4 w-4" />
                     <span className="relative z-10">LinkedIn</span>
+                  </Button>*/}
+		  <Button variant="secondary"> {/* className="w-full">*/}
+                    <FileDown className="mr-2 h-4 w-4" />
+                    <a href="/myCV.pdf" download className="relative z-10">Download CV</a>
                   </Button>
                 </div>
               </div>
