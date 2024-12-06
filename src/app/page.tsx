@@ -19,23 +19,20 @@ export default function HomePage() {
   const socialMedia = [
     {
       name: "LinkedIn",
-      url: "https://www.linkedin.com/in/yourusername",
+      url: "https://www.linkedin.com/in/taha-hakkou/",
       qrCode: "/linkedin-qr.png",
-      logo: "/linkedin-logo.png",
       color: "text-blue-500"
     },
     {
       name: "GitHub",
-      url: "https://github.com/yourusername",
+      url: "https://github.com/Taha-Hakkou",
       qrCode: "/github-qr.png",
-      logo: "/github-logo.png",
       color: "text-gray-800 dark:text-white"
     },
     {
-      name: "Twitter",
-      url: "https://twitter.com/yourusername",
+      name: "Twitter/X",
+      url: "https://x.com/Taha_Hakkou",
       qrCode: "/twitter-qr.png",
-      logo: "/twitter-logo.png",
       color: "text-sky-500"
     }
   ];
@@ -129,18 +126,12 @@ developAwesomeCode();
           </div>
         </section>
 
-	<section className="py-16 px-4 sm:px-6 lg:px-8"> {/* bg-secondary/10">*/}
-          <div className="max-w-7xl mx-auto">
-            <h2 className="text-3xl font-bold mb-12 text-primary font-navine text-center">
-              <span className="animate-glow">&lt;</span>My Journey<span className="animate-glow">/&gt;</span>
-            </h2>
-            <Timeline />
-          </div>
-        </section>
-
-        <section className="mt-16">
+	{/* Skills */}
+	<section className="mt-16">
           <h2 className="text-2xl font-bold mb-6 text-primary font-navine text-center">
-            <span className="animate-glow">&lt;</span>Skills & Technologies<span className="animate-glow">/&gt;</span>
+            <span className="animate-glow">&lt;</span>
+	      Skills & Technologies
+	    <span className="animate-glow">/&gt;</span>
           </h2>
           <div className="flex flex-wrap justify-center gap-2">
             {skills.map((skill, index) => (
@@ -151,11 +142,25 @@ developAwesomeCode();
           </div>
         </section>
 
-	{/* Social Media */}
-	<section className="py-16 px-4 sm:px-6 lg:px-8 bg-secondary/10">
+	{/* Timeline */}
+	<section className="py-16 px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
             <h2 className="text-3xl font-bold mb-12 text-primary font-navine text-center">
-              <span className="animate-glow">&lt;</span>Connect With Me<span className="animate-glow">/&gt;</span>
+              <span className="animate-glow">&lt;</span>
+	        My Journey
+	      <span className="animate-glow">/&gt;</span>
+            </h2>
+            <Timeline />
+          </div>
+        </section>
+
+	{/* Social Media */}
+	<section className="py-16 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto">
+            <h2 className="text-3xl font-bold mb-12 text-primary font-navine text-center">
+              <span className="animate-glow">&lt;</span>
+	        Social Media
+	      <span className="animate-glow">/&gt;</span>
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-5xl mx-auto">
               {socialMedia.map((platform, index) => (
@@ -164,9 +169,9 @@ developAwesomeCode();
             </div>
           </div>
         </section>
+
       </main>
       <Footer />
     </div>
   )
 }
-

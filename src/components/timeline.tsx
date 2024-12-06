@@ -68,7 +68,7 @@ export function Timeline() {
               index % 2 === 0 ? "pr-8 text-right" : "pl-8 text-left"
             )}>
               <motion.div 
-                className="bg-secondary/30 backdrop-blur-sm p-6 rounded-lg shadow-lg"
+                className="cyberpunk-border bg-secondary/30 backdrop-blur-sm p-6 shadow-lg"
                 animate={{
                   scale: hoveredIndex === index ? 1.05 : 1,
                   backgroundColor: hoveredIndex === index ? "rgba(var(--primary), 0.2)" : "rgba(var(--secondary), 0.3)",
@@ -97,8 +97,10 @@ export function Timeline() {
             <div className="w-2/12 flex justify-center">
               <motion.div 
                 className="w-4 h-4 bg-primary rounded-full cursor-pointer"
-                animate={{ 
-                  scale: hoveredIndex === index ? 1.5 : 1,
+                whileHover={{
+                  scale: 1.5,
+		}}
+		animate={{ 
                   backgroundColor: hoveredIndex === index ? "#ff00ff" : "transparent",
 		}}
                 transition={{ type: "spring", stiffness: 300 }}
