@@ -12,28 +12,34 @@ interface TimelineItem {
 
 const timelineItems: TimelineItem[] = [
   {
-    date: "2023 - Present",
-    title: "Junior Web Developer",
-    description: "Working on full-stack web applications using React and Node.js.",
-    tags: ["React", "Node.js", "TypeScript"]
+    date: "September 2023 - Present",
+    title: "Learning...",
+    description: "Preparing for Oracle Java SE 21 Certificate",
+    tags: ["Java", "JEE", "..."]
   },
   {
-    date: "2022 - 2023",
-    title: "Computer Science Degree",
-    description: "Completed my degree with a focus on web technologies and cybersecurity.",
-    tags: ["Computer Science", "Web Technologies", "Cybersecurity"]
+    date: "October 2021 - December 2022",
+    title: "Freelance Contract with Apotek",
+    description: "AWS Server configuration & Deployment Automation",
+    tags: ["AWS", "Docker", "..."]
   },
   {
-    date: "2021 - 2022",
-    title: "Freelance Web Developer",
-    description: "Built websites for small businesses using WordPress and custom PHP.",
-    tags: ["WordPress", "PHP", "MySQL"]
+    date: "February 2023 - September 2024",
+    title: "ALX Software Engineering Certificate",
+    description: "Intensive 12-month programming bootcamp covering back-end technologies.",
+    tags: ["Everything listed in skills"]
   },
   {
-    date: "2020 - 2021",
-    title: "Web Development Bootcamp",
-    description: "Intensive 6-month program covering front-end and back-end technologies.",
-    tags: ["HTML/CSS", "JavaScript", "Python"]
+    date: "September 2019 - January 2023",
+    title: "Computer Science Degree (Incomplete)",
+    description: "Genie Informatique @ ENSAO",
+    tags: ["C", "Java", "Python", "Algorithms & Data structures", "..."]
+  },
+  {
+    date: "July 2019",
+    title: "Baccalaureat (High School Diploma)",
+    description: "Mathematics @ Mehdi Ben Barka",
+    tags: ["..."]
   }
 ]
 

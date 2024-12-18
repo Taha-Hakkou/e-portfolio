@@ -11,9 +11,10 @@ import { SocialMediaCard } from '@/components/social-media-card';
 
 export default function HomePage() {
   const skills = [
-    "JavaScript", "TypeScript", "React", "Next.js", "Node.js", "Express",
-    "Python", "Django", "SQL", "MongoDB", "Docker", "AWS",
-    "Cybersecurity", "Ethical Hacking", "Network Security", "Cryptography"
+    "HTML/CSS", "Git/Github", "Linux/Bash", "Data Structures", "Algorithms", "C", "Java", "JEE",
+    "Python", "Flask", "Debugging", "Testing", "JavaScript(ES)/TypeScript", "JQuery", "SQL/MySQL",
+    "RestAPIs", "CM (Puppet)", "NoSQL(MongoDB)", "Redis", "Nodejs", "React", "Next.js", "Express",
+    "Docker", "AWS"
   ];
 
   const socialMedia = [
@@ -72,7 +73,9 @@ export default function HomePage() {
                   <span className="text-foreground">A junior developer</span>
                 </h1>
                 <p className="text-xl text-muted-foreground mb-8 font-navine">
-                  Passionate about creating secure and innovative web applications.
+                  Passionate about creating innovative and secure web applications.<br/>
+		  Freelancing in server configuration with Apotek Sarl.<br/>
+		  Preparing for my Oracle Java SE 21 Certification.
                 </p>
                 <div className="flex flex-wrap gap-4">
 		  <Button asChild className="">
@@ -100,7 +103,7 @@ export default function HomePage() {
                   <pre className="p-4 text-sm font-mono text-primary animate-pulse">
                     <code>{`
 function developAwesomeCode() {
-  const skills = ['JavaScript', 'React', 'Node.js'];
+  const skills = ['JavaScript', 'Java', 'Python'];
   const passion = 100;
   let projects = [];
 

@@ -9,22 +9,52 @@ import { Button } from "@/components/ui/button"
 export default function ProjectsPage() {
   const projects = [
     {
-      title: "Secure E-commerce Platform",
-      description: "A full-stack e-commerce solution with advanced security features and encryption.",
-      technologies: ["React", "Next.js", "Node.js", "MongoDB", "JWT"],
-      link: "#"
+      title: "E-portfolio",
+      description: "portfolio website made with Next.js, ...",
+      technologies: ["React", "Next.js", "Node.js", "nodemailer", "..."],
+      link: "https://github.com/Taha-Hakkou/e-portfolio"
     },
     {
-      title: "Cybersecurity Dashboard",
-      description: "Real-time monitoring and visualization of network security threats.",
-      technologies: ["Vue.js", "D3.js", "Express", "Socket.io", "Elasticsearch"],
-      link: "#"
+      title: "Job Board API",
+      description: "Tech jobs Board Api using express and mongodb",
+      technologies: ["JavaScript", "Express", "MongoDB", "..."],
+      link: "https://github.com/Taha-Hakkou/job_board"
     },
     {
-      title: "Ethical Hacking Toolkit",
-      description: "A collection of tools for penetration testing and vulnerability assessment.",
-      technologies: ["Python", "Rust", "Docker", "Metasploit", "Nmap"],
-      link: "#"
+      title: "Files Manager",
+      description: "System files manager developped using Express, and jobs Api...",
+      technologies: ["JavaScript", "Express", "bull", "MongoDB", "..."],
+      link: "https://github.com/Taha-Hakkou/alx-files_manager"
+    },
+    {
+      title: "Blogger",
+      description: "post blogging web app made with flask and mongodb",
+      technologies: ["Python", "Flask", "MongoDB", "JWT", "..."],
+      link: "https://github.com/Taha-Hakkou/blogger"
+    },
+    {
+      title: "AirBnb Clone",
+      description: "web app cloning AirBnB search service",
+      technologies: ["Python", "Flask", "..."],
+      link: "https://github.com/Taha-Hakkou/AirBnB_clone_v4"
+    },
+    {
+      title: "Monty",
+      description: "Monty programming language interpreter project",
+      technologies: ["C"],
+      link: "https://github.com/Taha-Hakkou/monty"
+    },
+    {
+      title: "Simple Shell",
+      description: "bash sell command-line clone",
+      technologies: ["C"],
+      link: "https://github.com/Taha-Hakkou/simple_shell"
+    },
+    {
+      title: "Printf",
+      description: "C printf function clone with formatting...",
+      technologies: ["C"],
+      link: "https://github.com/Taha-Hakkou/printf"
     }
   ]
 
